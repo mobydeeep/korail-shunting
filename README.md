@@ -21,4 +21,12 @@ Run `node --test tests/simulation.test.mjs` for mission completion, coupling gua
 The Sites identity and static output location are stored in `.openai/hosting.json`.
 
 
-GitHub Pages 실행 파일은 저장소 루트의 `index.html`을 기준으로 구성했습니다.
+## GitHub 실행 구조
+
+- `index.html`: 게임 시작 파일
+- `style.css`: 화면/UI 스타일
+- `game.js`: Three.js 기반 3D 작업장 및 조작 로직
+- `simulation.js`: 입환 연결·분리·이동 시뮬레이션 로직
+- `tests/simulation.test.mjs`: 핵심 입환 로직 테스트
+
+브라우저에서 `index.html`을 열면 실행됩니다. GitHub Pages를 켜면 웹에서도 바로 플레이할 수 있습니다.
